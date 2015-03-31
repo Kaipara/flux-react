@@ -1,16 +1,24 @@
 {
-  "name": "flux-react",
-  "version": "0.1.0",
-  "description": "sandbox created to lear flux and reactjs in a real environment",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "flux",
-    "react",
-    "reactjs"
-  ],
-  "author": "Jérôme Avoustin",
-  "license": "ISC"
+    "name": "flux-react",
+    "version": "0.1.0",
+    "description": "sandbox created to lear flux and reactjs in a real environment",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "flux",
+        "react",
+        "reactjs"
+    ],
+    "author": "Jérôme Avoustin",
+    "license": "ISC",
+    "dependencies": {
+        "browserify": "^9.0.3",
+        "flux": "^2.0.1",
+        "react": "^0.13.1"
+    },
+    "scripts": {
+        "postinstall": ". ./deployment/copy_libs.sh"
+    }
 }
